@@ -11,12 +11,11 @@ public class Item implements ItemInterface{
      String name;
      boolean status;
      String description;
-     double price;
-    public Item(String name, boolean status, String description, double price){
+}
+    public Item(String name, boolean status, String description){
     this.name = name;
     this.status = status;
     this.description = description;
-    this.price = price;
 }
 public String getName(){
     return name;
@@ -26,8 +25,6 @@ public boolean status(){
 }
 public String description(){
     return description;
-}
-public double price(){
-    return price;
+
 }
 }
