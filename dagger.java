@@ -7,27 +7,32 @@
  */
 public class dagger extends Weapon
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    int damage;
+    int range;
+    int durability;
 
-    /**
-     * Constructor for objects of class dagger
-     */
-    public dagger()
-    {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+public dagger(String name, String status, String description, int damage, int range, int durability){
+    super(name, status, description, damage);
+    this.damage = damage;
+    this.range = range;
+    this.durability = durability;
 }
+
+public int getDamage(){
+    return damage;
+
+}
+
+public int getRange(){
+    return range;
+}
+
+public int getDurability(){
+    return durability;
+}
+
+public void poisonedAttack(){
+    System.out.println("Targets has been poisoned");
+}
+}
+    
