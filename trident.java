@@ -29,7 +29,7 @@ public int getRange(){
 public int getDurability(){
     return durability;
 }
-    public void waveCrash(Character target){
-        target.health -= damage;
+    public void waveCrash(){
+        targetHealth -= 100;
     }
 }
