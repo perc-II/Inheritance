@@ -7,27 +7,31 @@
  */
 public class bow extends Weapon
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class bow
-     */
-    public bow()
-    {
-        // initialise instance variables
-        x = 0;
+    
+    int arrows;
+    int damage;
+    
+    public Bow( String name, String status, String description, int arrows, int damage){
+        super(name, status, description, damage);
+        this.arrows = 7;
+        this.damage = damage;
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+public int getArrows(){
+    return arrows;
+}
+
+public void shootArrows(){
+    if(arrows > 0){
+        arrows--;
     }
+}
+    public int getDamage(){
+    return damage;
+        
+    }
+
+public void repairArrows(){
+    arrows = 7;
+}
 }
