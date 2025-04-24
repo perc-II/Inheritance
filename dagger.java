@@ -11,7 +11,7 @@ public class dagger extends Weapon
     int range;
     int durability;
 
-public dagger(String name, String status, String description, int damage, int range, int durability){
+public dagger(String name, boolean status, String description, int damage, int range, int durability){
     super(name, status, description, damage);
     this.damage = damage;
     this.range = range;
