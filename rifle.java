@@ -27,7 +27,7 @@ public rifle(String name, boolean status, String description, int damage, int ra
        durability = 87;
        caliber = 10;
     }
-public boolean poisonedAttack(){
+public boolean RiflePopSpin(){
     int randomNum = (int)Math.random()*10+1);
     if(randomNum  <= 8){
     System.out.println("Targets has been poisoned");
