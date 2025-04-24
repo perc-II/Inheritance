@@ -15,7 +15,7 @@ public  cookie(String name, boolean status, String description, int protection, 
     super(name, status, description, protection);
     this.protection = protection;
     this.power = power;
-    this.speedBoost;
+    this.speedBoost = speedboost;
 }
      public cookie(){
       super();
