@@ -1,14 +1,14 @@
-public class extends Defense
+public class Armor extends Defense
   {
-    String armor;
+    String Armor;
 
-public armor(String name, boolean status, String description, int durability){
+public Armor(String name, boolean status, String description, int durability){
   super(name, status, description);
   this.durability = durability;
-  this.armor = armor;
+  this.Armor = Armor;
 }
-public armor(){
+public Armor(){
   super();
-  armor = "unicorn";
+  Armor = "unicorn";
 }
     
