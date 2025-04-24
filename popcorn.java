@@ -7,27 +7,30 @@
  */
 public class popcorn extends consumable 
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    int protection;
+    int strength;
+    int energyBoost;
+    int speed;
 
-    /**
-     * Constructor for objects of class popcorn
-     */
-    public popcorn()
-    {
-        // initialise instance variables
-        x = 0;
+public  popcorn(String name, boolean status, String description, int protection, int strength, int energyBoost, int speed){
+    super(name, status, description, protection);
+    this.protection = protection;
+    this.strength = strenghth;
+    this.energyBoost = energyBoost;
+    this.speed = speed;
+}
+     public pizza(){
+      super();
+      consumable = "popcorn";
+      protection = 100;
+      strength = 70;
+      energyBoost = 100;
+      speed = 40;
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+public boolean jumpBoost(){
+    int randomNum = (int)Math.random()*10+1);
+    if(randomNum  <= 9){
+    return true;
+}
+return false;
 }
