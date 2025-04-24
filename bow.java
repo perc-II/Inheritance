@@ -11,7 +11,7 @@ public class bow extends Weapon
     int arrows;
     int damage;
     
-    public Bow( String name, String status, String description, int arrows, int damage){
+    public Bow( String name, boolean status, String description, int arrows, int damage){
         super(name, status, description, damage);
         this.arrows = arrows;
         this.damage = damage;
