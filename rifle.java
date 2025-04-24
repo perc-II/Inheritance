@@ -12,7 +12,7 @@ public class rifle extends Weapon
     int durability;
     int caliber;
 
-public rifle(String name, boolean status, String status, String description, int damage, int range, int durability, int caliber){
+public rifle(String name, boolean status, String description, int damage, int range, int durability, int caliber){
     super(name, status, description, damage);
     this.damage = damage;
     this.range = range;
