@@ -11,11 +11,13 @@ public class Item implements ItemInterface{
      String name;
      boolean status;
      String description;
+     String value;
 }
-    public Item(String name, boolean status, String description){
+    public Item(String name, boolean status, String description, String value){
     this.name = name;
     this.status = status;
     this.description = description;
+    this.value = value;
 }
 public String getName(){
     return name;
@@ -27,4 +29,9 @@ public String description(){
     return description;
 
 }
+public Item(){
+    name = sky;
+    description = "Makes awesome cool weapons";
+    value = "Mythical";
 }
+
