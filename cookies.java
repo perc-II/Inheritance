@@ -7,27 +7,28 @@
  */
 public class cookies extends consumable
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    int protection;
+    int power;
+    int speedBoost;
 
-    /**
-     * Constructor for objects of class cookies
-     */
-    public cookies()
-    {
-        // initialise instance variables
-        x = 0;
+public  cookie(String name, boolean status, String description, int protection, int power, int speedBoost){
+    super(name, status, description, protection);
+    this.protection = protection;
+    this.power = power;
+    this.speedBoost;
+}
+     public cookie(){
+      super();
+      consumable = "cookie";
+      protection = 20;
+      power = 10;
+      speedBoost = 5;
+     
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+public boolean EnergyBoost(){
+    int randomNum = (int)Math.random()*10+1);
+    if(randomNum  <= 100){
+    return true;
+}
+return false;
 }
