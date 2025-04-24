@@ -7,27 +7,32 @@
  */
 public class crossbow extends Weapon
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    int damage;
+    int range;
+    int arrows;
+    int durability
 
-    /**
-     * Constructor for objects of class crossbow
-     */
-    public crossbow()
-    {
-        // initialise instance variables
-        x = 0;
+public rifle(String name, boolean status, String description, int damage, int range, int durability, int arrows){
+    super(name, status, description, damage);
+    this.damage = damage;
+    this.range = range;
+    this.arrows = arrows;
+    this.durability = durability;
+}
+     public rifle(){
+       super();
+       weapon = "cross bow";
+       damage = 95;
+       range = 70;
+       durability = 80;
+       arrows = 5;
     }
+public boolean multi-shot(){
+    int randomNum = (int)Math.random()*10+1);
+    if(randomNum  <= 8){
+    System.out.println("Targets has been poisoned");
 
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+    return true;
+}
+return false;
 }
