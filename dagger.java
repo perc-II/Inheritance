@@ -31,8 +31,13 @@ public int getDurability(){
     return durability;
 }
 
-public void poisonedAttack(){
+public boolean poisonedAttack(){
+    int randomNum = (int)Math.random()*10+1);
+    if(randomNum  <= 8){
     System.out.println("Targets has been poisoned");
+
+    return true;
 }
+return false;
 }
     
