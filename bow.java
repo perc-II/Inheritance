@@ -34,4 +34,13 @@ public void shootArrows(){
 public void repairArrows(){
     arrows = 7;
 }
-}
+    public boolean parry(){
+        int randomNum = (int)(Math.random()*10+1);
+        if(randomNum <= 5){
+
+            return true;
+
+        }
+        return false;
+    }
+
