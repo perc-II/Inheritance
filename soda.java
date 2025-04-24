@@ -7,27 +7,31 @@
  */
 public class soda extends consumable
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    int protection;
+    int strength;
+    int energyBoost;
+    int hydration;
 
-    /**
-     * Constructor for objects of class soda
-     */
-    public soda()
-    {
-        // initialise instance variables
-        x = 0;
+public soda(String name, boolean status, String description, int protection, int strength, int energyBoost, int hydration){
+    super(name, status, description, protection);
+    this.protection = protection;
+    this.strength = strenghth;
+    this.energyBoost = energyBoost;
+    this.hydration = hydration;
+}
+     public soda(){
+      super();
+      consumable = "soda";
+      protection = 20;
+      strength = 30;
+      energyBoost = 95;
+      hydration = 75;
+     
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+public boolean hydrationRestoration(){
+    int randomNum = (int)Math.random()*10+1);
+    if(randomNum  <= 65){
+    return true;
+}
+return false;
 }
