@@ -13,30 +13,19 @@ public class bow extends Weapon
     
     public Bow( String name, String status, String description, int arrows, int damage){
         super(name, status, description, damage);
-        this.arrows = 7;
+        this.arrows = arrows;
         this.damage = damage;
     }
-
-public int getArrows(){
-    return arrows;
-}
-
-public void shootArrows(){
-    if(arrows > 0){
-        arrows--;
-    }
-}
-    public int getDamage(){
-    return damage;
-        
-    }
-
-public void repairArrows(){
-    arrows = 7;
-}
+     public bow(){
+       super();
+       weapon = "bow";
+       arrows = 7;
+       damage = 50;
+     }
+    
     public boolean parry(){
         int randomNum = (int)(Math.random()*10+1);
-        if(randomNum <= 5){
+        if(randomNum <= 4){
 
             return true;
 
