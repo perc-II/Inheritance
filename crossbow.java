@@ -19,7 +19,7 @@ public rifle(String name, boolean status, String description, int damage, int ra
     this.arrows = arrows;
     this.durability = durability;
 }
-     public rifle(){
+     public crossbow(){
        super();
        weapon = "cross bow";
        damage = 95;
