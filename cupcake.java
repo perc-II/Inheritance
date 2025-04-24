@@ -7,27 +7,32 @@
  */
 public class cupcake extends consumable
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    int protection;
+    int strength;
+    int health;
+    int invisbility;
 
-    /**
-     * Constructor for objects of class cupcake
-     */
-    public cupcake()
-    {
-        // initialise instance variables
-        x = 0;
+public  cupcake(String name, boolean status, String description, int protection, int strength, int health){
+    super(name, status, description, protection);
+    this.protection = protection;
+    this.strength = strenghth;
+    this.health = health;
+    this.invibilty = invisbility;
+    
+}
+     public pizza(){
+      super();
+      consumable = "cupcake";
+      protection = 100000000;
+      strength = 100000000;
+      health = 10000000000;
+      invisbilty = 100;
+     
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+public boolean regeneration(){
+    int randomNum = (int)Math.random()*10+1);
+    if(randomNum  <= 100000000000000000){
+    return true;
+}
+return false;
 }
